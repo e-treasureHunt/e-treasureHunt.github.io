@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ddd8ff; /* Mild Violet */
+        }
+
+        h2 {
+            color: #9400D3; /* Dark Violet */
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .card {
+            margin-top: 20px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #9400D3; /* Dark Violet */
+            color: #FFFFFF; /* White */
+        }
+
+        .form-control {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 19px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Answer this riddle to move forward.</h2>
+
+                <p class="card-text">I have cities,but no houses.I have mountains,but no trees.I have water,but no fish.What am I?</p>
+                <input type="text" id="answer" class="form-control" placeholder="Your Answer">
+                <button class="btn btn-primary" onclick="checkAnswer()">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function checkAnswer() {
+            var userAnswer = document.getElementById('answer').value.toLowerCase(); // Convert to lowercase for case-insensitivity
+    
+            if (userAnswer === 'map') {
+                window.location.href = 'congrats.html';
+            } else {
+                alert('Incorrect answer. Try again!');
+            }
+        }
+
+        document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+    });
+    </script>
+</body>
+</html>
