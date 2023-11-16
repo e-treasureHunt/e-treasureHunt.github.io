@@ -53,7 +53,7 @@
             <div class="card-body">
                 <h2 class="card-title">Answer this riddle to move forward.</h2>
 
-                <p class="card-text">I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?</p>
+                <p class="card-text">I have keys but no locks. I have space but no room. You can enter but you can't go inside. What am I?</p>
                 <input type="text" id="answer" class="form-control" placeholder="Your Answer">
                 <button class="btn btn-primary" onclick="checkAnswer()">Submit</button>
             </div>
@@ -64,7 +64,7 @@
         function checkAnswer() {
             var userAnswer = document.getElementById('answer').value.toLowerCase(); // Convert to lowercase for case-insensitivity
     
-            if (userAnswer === 'echo') {
+            if (userAnswer === 'keyboard') {
                 window.location.href = '2l62Ofl6GpDVhEhEBA1juKUqyFEE1Yu4wd1OXuAXu31E.html';
             } else {
                 alert('Incorrect answer. Try again!');
